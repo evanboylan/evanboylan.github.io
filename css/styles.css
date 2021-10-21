@@ -1,83 +1,145 @@
-header {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 20px;
-  padding: 25px 0px;
+body {
+    background-color: #5CDB95;
+    color: #05386B;
+}
 
+nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-
-  z-index: 5;
-}
-
-header a{
-  margin-right: 2rem;
-  color: white;
-
-  text-decoration: none;
-  z-index: 5;
-}
-
-#welcome {
+  background-color: #05386B;
+  color: #5CDB95;
   width: 100%;
-  height: 100vh;
+  justify-content: space-around;
+  height: 30px;
+  font-size: 20px;
+  align-items: center;
+}
 
-  position: absolute;
-
-  top: 10vw;
-  left: 0vw;
+.nav-link {
+  display: flex;
+  text-decoration: none;
 
 }
 
-#welcome h1{
+a:link {
+  color: #5CDB95;
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: #5CDB95;
+  text-decoration: none;
+
+}
+
+.a:hover {
+  color: #5CDB95;
+  text-decoration: none;
+
+}
+
+.name {
+  display: flex;
+  position: relative;
+  /* background-image: url(/images/BeFunky-collage.jpg); */
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+
+  /* height: auto; */
+}
+
+.name::before{
+  content: "";
+  background-image: url(/images/BeFunky-collage.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.40;
+
+}
+
+h1 {
+  height: auto;
+}
+
+.profile-pic {
+  width: 35vw;
+  position: relative;
+  padding: 10px;
+}
+
+.name-title{
+  display: flex;
+  background-color: #05386B;
+  color: #5CDB95;
+  position: relative;
+}
+
+.section-title{
+  text-align: center;
+}
+
+.project{
+  background-color: #05386B;
+  align-items: center;
+  font-size: large;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.project-articles{
+  color: #5CDB95;
+}
+
+.project.text{
+  width: 88%;
+}
+
+li{
+  width: 93%;
+  text-decoration: none;
+}
+
+.project-images{
+  width: 78%;
+  align-items: center;
+}
+
+.personal{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me{
+  background-color: #05386B;
+  color: #5CDB95;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+
+}
+
+.about-me-list{
+  display: flex;
   text-align: left;
-  font-size: 3vw;
-  color: black;
-
-  position: absolute;
-  top: 5vw;
-  left: 7vw;
 }
 
-#welcome h2{
-  text-align: left;
-  font-size: 3vw;
-  color: black;
-
-  position: absolute;
-  top: 9vw;
-  left: 7vw;
+.links{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
 }
 
-.projects-grid{
-  background-color: thistle;
-
+.social-media-items{
+  display: flex;
+  justify-content: space-around;
 }
 
+.social-media{
+  width: 40%;
 
-
-
-
-
-/* mobile media only */
-@media only screen and (max=width: 800px)
-{
-  header {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 2vw;
-    padding: 25px, 0px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: black;
-
-    z-index: 5;
-  }
 }
