@@ -99,7 +99,7 @@ h1 {
   width: 88%;
 }
 
-li{
+.project-text-line{
   width: 93%;
   text-decoration: none;
 }
@@ -111,7 +111,10 @@ li{
 
 .personal{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+
+
 }
 
 .about-me{
@@ -120,11 +123,12 @@ li{
   align-items: center;
   text-align: center;
   margin: 5px;
-
+  max-width: 480px;
 }
 
 .about-me-list{
   display: flex;
+  flex-direction: column;
   text-align: left;
 }
 
@@ -140,6 +144,27 @@ li{
 }
 
 .social-media{
-  width: 40%;
+  width: 23%;
 
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 480px;
+}
+
+@media only screen and (max-width:1040px){
+
+  .project{
+    max-width: 900px;
+  }
+  .about-me{
+    max-width: 900px;
+  }
+  .about-me-list{
+    align-items: center;
+    padding-inline-start: 0px;
+  }
 }
